@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700);
+
+.datepicker{
+    display: inline-block;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 13px;
+    background-color: #FFF;
+    color: #585B53;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #E4E4E4;
+    z-index: 1051;
+}
+
+.datepicker .calendar {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.datepicker .calendar .nav-container {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.datepicker .calendar .nav-container p {
+    margin: 10px 0;
+}
+
+.datepicker .calendar .nav-container .title-md {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.datepicker .calendar .nav-container .title-sm {
+    color: #9A9A9A;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.datepicker .calendar .nav-container .title-md:hover,
+.datepicker .calendar .nav-container .title-sm:hover {
+    color: #64A05A;
+}
+
+.datepicker .calendar .day-names th {
+    padding: 7px 5px;
+}
+
+.datepicker .calendar tbody td {
+    border-top: 1px solid #E4E4E4;
+    border-left: 1px solid #E4E4E4;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.datepicker .calendar tbody tr td:first-of-type {
+    border-left: none;
+}
+
+.datepicker .calendar.days tbody span {
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 28px;
+    width: 30px;
+    height: 27px;
+}
+
+.datepicker .calendar.days .in-range {
+    background-color: #F7F7F7;
+    color: #64A05A;
+}
+
+.datepicker .calendar.days .previous-month,
+.datepicker .calendar.days .next-month {
+    background-color: #F7F7F7;
+    color: #CCC;
+}
+
+.datepicker .calendar.months th:nth-child(2),
+.datepicker .calendar.years th:nth-child(2) {
+    padding: 13px 0;
+}
+
+.datepicker .calendar.months td {
+    padding: 14px 10px;
+}
+
+.datepicker .calendar.years td {
+        padding: 14px 26px;
+}
+
+.datepicker .calendar .selected span,
+.datepicker .calendar.months .selected,
+.datepicker .calendar.years .selected,
+.datepicker .calendar.days td:hover span,
+.datepicker .calendar.months td:hover,
+.datepicker .calendar.years td:hover {
+    background-color: #64A05A;
+    color: #FFF;
+}
+
+/*:::::::::::Arrow icons ::::::::::::*/
+.datepicker i.arrow {
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+    top: 1pt;
+    width: 0.7em;
+    height: 0.7em;
+    cursor: pointer;
+}
+
+.datepicker i.arrow:hover{
+    width: 0.9em;
+    height: 0.9em;
+}
+
+.datepicker i.arrow.right {
+    border-right: 0.2em solid #64A05A;
+    border-top: 0.2em solid #64A05A;
+    transform: rotate(45deg);
+}
+
+.datepicker i.arrow.left {
+    left: 2pt;
+    border-left: 0.2em solid #64A05A;
+    border-top: 0.2em solid #64A05A;
+    transform: rotate(-45deg);
+}

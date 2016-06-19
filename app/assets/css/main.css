@@ -1,0 +1,8 @@
+.demo1 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.datepicker.no-index{
+    z-index: 1;
+}
